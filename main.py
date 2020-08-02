@@ -4,8 +4,14 @@ import sys
 import pygame
 import random
 
-width = 11
-height = 11
+width = 2
+height = 2
+
+while width % 2 == 0 and width % 2 == 0:
+    print('Please input odd numbers...')
+    input(width, height)
+
+
 DISPLAY_WIDTH = (width * 10)
 DISPLAY_HEIGHT = (height * 10)
 WHITE = (255, 255, 255)
@@ -14,8 +20,6 @@ BLACK = (0, 0, 0)
 v_width = int((width-1) / 2)
 v_height = int((height - 1) / 2)
 
-if width % 2 == 0 or height % 2 == 0:
-    print('Please select odd numbers for width and height')
 
 board = [[0 for i in range(width)] for j in range(height)]
 
