@@ -7,9 +7,10 @@ import random
 width = 2
 height = 2
 
-while width % 2 == 0 and width % 2 == 0:
-    print('Please input odd numbers...')
-    input(width, height)
+while width % 2 == 0 and height % 2 == 0:
+    print('Please input odd number larger than 7...')
+    height = int(input())
+    width = height
 
 
 DISPLAY_WIDTH = (width * 10)
